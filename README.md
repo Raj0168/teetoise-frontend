@@ -104,19 +104,19 @@ All screenshots are taken from the live version of the application before it was
 
 ### Login Page
 
-User login screen with email/password. <img src="public/screenshots/0.Login.webp" alt="Login Page" width="600" />
+User login screen with email/password. <img src="public/screenshots/0.Login.webp" alt="Login Page" width="300" />
 
 ### Register Page
 
-User registration screen with input validation. <img src="public/screenshots/1.Register.webp" alt="Register Page" width="600" />
+User registration screen with input validation. <img src="public/screenshots/1.Register.webp" alt="Register Page" width="300" />
 
 ### Home Page – Banner and Promotions
 
-Landing page with promotional banners and featured collections. <img src="public/screenshots/2.Home_1.webp" alt="Home Banner" width="600" />
+Landing page with promotional banners and featured collections. <img src="public/screenshots/2.Home_1.webp" alt="Home Banner" width="300" />
 
 ### Home Page – Featured Products
 
-Section showcasing trending and new arrival items. <img src="public/screenshots/2.Home_2.webp" alt="Featured Products" width="600" />
+Section showcasing trending and new arrival items. <img src="public/screenshots/2.Home_2.webp" alt="Featured Products" width="300" />
 
 ### Sidebar Navigation
 
@@ -124,55 +124,55 @@ Accessible sidebar menu optimized for mobile users. <img src="public/screenshots
 
 ### Product Overview
 
-Grid layout of product listings with filters. <img src="public/screenshots/4.Product_overview.webp" alt="Product Grid" width="600" />
+Grid layout of product listings with filters. <img src="public/screenshots/4.Product_overview.webp" alt="Product Grid" width="300" />
 
 ### Product Details Page
 
-Detailed product information with image gallery and color, size options. <img src="public/screenshots/5.Product_details.webp" alt="Product Details" width="600" />
+Detailed product information with image gallery and color, size options. <img src="public/screenshots/5.Product_details.webp" alt="Product Details" width="300" />
 
 ### Product Filters
 
-Category, price range, and size filters. <img src="public/screenshots/5.Product_filters.webp" alt="Product Filters" width="600" />
+Category, price range, and size filters. <img src="public/screenshots/5.Product_filters.webp" alt="Product Filters" width="300" />
 
 ### Alternate Product View
 
-Product manufacturer and quality details. <img src="public/screenshots/6.Product_details_2.webp" alt="Product Detail Variant" width="600" />
+Product manufacturer and quality details. <img src="public/screenshots/6.Product_details_2.webp" alt="Product Detail Variant" width="300" />
 
 ### Wishlist Page
 
-View and manage all saved products. <img src="public/screenshots/7.Product_wishlists.webp" alt="Wishlist" width="600" />
+View and manage all saved products. <img src="public/screenshots/7.Product_wishlists.webp" alt="Wishlist" width="300" />
 
 ### Cart Page
 
-Interactive cart with quantity, variant, and size management. <img src="public/screenshots/8.Product_carts.webp" alt="Cart Page" width="600" />
+Interactive cart with quantity, variant, and size management. <img src="public/screenshots/8.Product_carts.webp" alt="Cart Page" width="300" />
 
 ### Checkout Page
 
-Delivery address input and summary before payment. <img src="public/screenshots/9.Checkout.webp" alt="Checkout Page" width="600" />
+Delivery address input and summary before payment. <img src="public/screenshots/9.Checkout.webp" alt="Checkout Page" width="300" />
 
 ### Payment Gateway
 
-Razorpay integration for secure transactions. <img src="public/screenshots/10.Payment.webp" alt="Payment Screen" width="600" />
+Razorpay integration for secure transactions. <img src="public/screenshots/10.Payment.webp" alt="Payment Screen" width="300" />
 
 ### Orders Overview
 
-List of all past orders. <img src="public/screenshots/11.Orders_overview.webp" alt="Orders Overview" width="600" />
+List of all past orders. <img src="public/screenshots/11.Orders_overview.webp" alt="Orders Overview" width="300" />
 
 ### Order Details Page
 
-In-depth view with delivery status and item breakdown. <img src="public/screenshots/12.Order_details.webp" alt="Order Details" width="600" />
+In-depth view with delivery status and item breakdown. <img src="public/screenshots/12.Order_details.webp" alt="Order Details" width="300" />
 
 ### User Account Details
 
-Profile settings and address management. <img src="public/screenshots/13.User_details.webp" alt="User Profile" width="600" />
+Profile settings and address management. <img src="public/screenshots/13.User_details.webp" alt="User Profile" width="300" />
 
 ### About Us
 
-Static page with brand mission and story. <img src="public/screenshots/14.About_Us.webp" alt="About Us Page" width="600" />
+Static page with brand mission and story. <img src="public/screenshots/14.About_Us.webp" alt="About Us Page" width="300" />
 
 ### FAQs
 
-Frequently asked questions section. <img src="public/screenshots/15.FAQs.webp" alt="FAQs" width="600" />
+Frequently asked questions section. <img src="public/screenshots/15.FAQs.webp" alt="FAQs" width="300" />
 
 ---
 
