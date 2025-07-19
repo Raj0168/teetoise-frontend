@@ -1,0 +1,86 @@
+@import "../assets/styles/mixins";
+
+.wishlist-container {
+    background-color: #f8f9fa;
+}
+
+.loading-spinner {
+    @include loading-animation;
+}
+
+.button-primary {
+    @include button-primary;
+    margin-bottom: 1rem;
+}
+
+.wishlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h2 {
+        font-size: 1.8rem;
+        color: #333;
+    }
+}
+
+.remove-all-button {
+    @include button-secondary;
+    padding: 5px;
+    font-size: 0.875rem;
+}
+
+.cardTitle {
+    font-size: 0.875rem;
+    @include clamped-text-one;
+}
+
+.remove-item {
+    color: #fff;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    z-index: 20;
+    font-size: 24px;
+}
+
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+
+    .empty-cart-image {
+        height: 300px;
+        width: 300px;
+    }
+
+}
+
+.wishlist-card {
+    border-radius: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .remove-button {
+        margin-top: 10px;
+        background-color: #dc3545;
+        border-color: #dc3545;
+
+        &:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    }
+}

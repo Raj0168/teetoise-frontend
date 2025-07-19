@@ -1,0 +1,374 @@
+// AddressAndOrderSummary.scss
+
+$primary-color: #F8D32A;
+$text-color: #333;
+$background-color: #fff;
+$border-color: #ddd;
+
+.address-order-summary {
+
+  /* General card styling */
+  .card {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Order summary card styling */
+  .order-summary-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .order-summary-item:last-child {
+    border-bottom: none;
+  }
+
+  .item-details div {
+    margin-bottom: 0.5rem;
+  }
+
+  .item-details img {
+    border-radius: 0.25rem;
+  }
+
+  /* Align text and items within the card */
+  .summary {
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+  }
+
+  .summary div {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .summary strong {
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Improve alignment and spacing for ListGroup */
+  .address-list-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .address-list-item:last-child {
+    border-bottom: none;
+  }
+
+  .address-list-item .form-check {
+    margin-bottom: 0;
+  }
+
+  .address-list-item img {
+    border-radius: 0.25rem;
+    max-width: 80px;
+    margin-right: 1rem;
+  }
+
+  /* Center and align radio button vertically */
+  .form-check-input {
+    margin-top: 0.3rem;
+  }
+
+  .address-list-item .form-check-label {
+    display: block;
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .text-end {
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .order-summary-item {
+      padding: 0.5rem;
+    }
+
+    .summary {
+      padding: 0.5rem;
+    }
+
+    .item-details img {
+      width: 80px;
+    }
+
+    .address-list-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .address-list-item img {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+
+  margin-top: 2rem;
+  background-color: $background-color;
+  color: $text-color;
+
+  h2 {
+    color: #000;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $background-color;
+  }
+
+  .my-3 {
+    margin: 1rem 0;
+  }
+
+  .order-summary-item {
+    .item-details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .text-end {
+        text-align: end;
+      }
+    }
+  }
+
+  .summary {
+    border-top: 1px solid $border-color;
+    padding-top: 1rem;
+
+    div {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .btn {
+    border-radius: 0;
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: #000;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+      border-color: darken($primary-color, 10%);
+    }
+  }
+
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+
+    &:hover {
+      background-color: darken(#28a745, 10%);
+      border-color: darken(#28a745, 10%);
+    }
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+
+    &:hover {
+      background-color: darken(#6c757d, 10%);
+      border-color: darken(#6c757d, 10%);
+    }
+  }
+
+  .card {
+    border: 1px solid $border-color;
+    border-radius: 0;
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .list-group-item {
+      border: 1px solid $border-color;
+      border-radius: 0;
+      margin-bottom: 0.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .form-check {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form-check-label {
+    margin-left: 0.5rem;
+  }
+
+  .text-danger {
+    color: red;
+  }
+
+  .alert-warning {
+    background-color: #ffeeba;
+    color: #856404;
+    border-color: #ffeeba;
+  }
+
+  // Responsive Styles
+  @media (max-width: 767px) {
+    .card-body {
+      padding: 1rem;
+    }
+
+    .summary {
+      div {
+        font-size: 0.875rem;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .order-summary-item img {
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+}
+
+
+.custom-checkbox .form-check-input {
+  /* Customize the checkbox appearance */
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 2px solid #007bff;
+  /* Customize border color */
+  background-color: #fff;
+  /* Customize background color */
+  appearance: none;
+  /* Remove default styling */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox .form-check-input:checked {
+  background-color: #007bff;
+  /* Customize checked background color */
+  border-color: #007bff;
+  /* Customize checked border color */
+}
+
+.custom-checkbox .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+  /* Add focus style */
+}
+
+.custom-checkbox .form-check-label {
+  /* Style the label if needed */
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.address-order-summary .card .card-body {
+  padding: 0.5rem;
+}
+
+.address-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.address-list-item {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.address-form {
+  padding: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.spinner-container .spinner-border {
+  margin-right: 5px;
+}
+
+.text-success {
+  font-size: 14px;
+}
+
+/* AddressAndOrderSummary.scss */
+
+/* ListGroup Item Styles */
+.address-list-item {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  flex-wrap: wrap;
+  /* Allows items to wrap if necessary */
+}
+
+/* Radio Button Styles */
+.address-list-item .form-check {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.address-list-item .form-check .form-check-input {
+  margin: 0;
+  margin-right: 0.5em;
+}
+
+/* Address Details Styles */
+.address-list-item .form-check .form-check-label {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  color: #333;
+  word-wrap: break-word;
+  /* Ensures text wraps properly */
+  flex: 1;
+  /* Allows the label to take available space */
+}
+
+.address-list-item {
+  padding: 1rem;
+  cursor: pointer;
+
+  &.selected-address {
+    border: 2px solid #000000;
+    /* Highlight color */
+    background-color: #e7e4e4;
+    /* Optional: subtle background change */
+  }
+}

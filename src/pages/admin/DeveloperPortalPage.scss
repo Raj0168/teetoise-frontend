@@ -1,0 +1,80 @@
+@import "../../assets/styles/variables";
+
+.developer-portal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: $secondary-color;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+        margin-top: 60px;
+    }
+
+    .toggle-button {
+        margin: 10px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 60px;
+        bottom: 0;
+        padding-top: 40px;
+        height: calc(100vh - 60px);
+        background-color: $secondary-color;
+        color: white;
+        min-height: 100vh;
+        position: fixed;
+        overflow-y: auto;
+        width: 250px;
+    }
+
+    .nav-link {
+        color: white;
+        padding: 10px 15px;
+
+        &:hover,
+        &:focus {
+            background-color: #495057;
+            color: #fff;
+        }
+    }
+
+    .ml-3 {
+        margin-left: 20px;
+    }
+
+    .content-area {
+        width: 80%;
+        margin-top: 100px;
+        margin-left: 245px;
+        padding-left: 50px;
+        background-color: #f8f9fa;
+        height: 100vh;
+    }
+
+    @media (max-width: 768px) {
+        .sidebar {
+            position: relative;
+            min-height: auto;
+            height: auto;
+            width: 100%;
+        }
+
+        .content-area {
+            margin-left: 0;
+        }
+
+        .nav-link {
+            padding: 10px 20px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../assets/styles/mixins";
+
+
+.button-primary {
+    @include button-primary;
+}
+
+.remove-button {
+    @include button-secondary;
+}
+
+.pin_code_input {
+    width: 30%;
+}
+
+.pin_area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spinner-class {
+    position: relative;
+}

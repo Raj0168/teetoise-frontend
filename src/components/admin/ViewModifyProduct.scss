@@ -1,0 +1,41 @@
+.view-modify-product {
+    .card-body {
+        h2 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .table {
+
+        th,
+        td {
+            text-align: center;
+        }
+    }
+
+    .spinner {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .table {
+            font-size: 0.8rem;
+        }
+
+        .form-control {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-body {
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+}

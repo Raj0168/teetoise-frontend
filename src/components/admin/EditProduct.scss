@@ -1,0 +1,54 @@
+@import "../../assets/styles/mixins";
+
+// EditProduct.scss
+
+/* Container for the modal */
+.modal-body {
+    .loading-animation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+    }
+}
+
+
+/* Style for the alert messages */
+.alert {
+    margin-bottom: 1rem;
+}
+
+/* Style for the image thumbnails */
+.image-thumbnail {
+    width: 100px; // Adjust as needed
+    height: 100px; // Adjust as needed
+    object-fit: cover; // Ensures the image covers the area without distortion
+}
+
+/* Style for the buttons */
+.btn {
+    margin-right: 0.5rem;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    margin: 0 20px;
+}
+
+/* Style for the list group items */
+.list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Optional: Adjust the spacing for the form controls */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.loading {
+    @include loading-animation;
+}

@@ -1,0 +1,25 @@
+.shop-by-occasion {
+    margin: 20px 0;
+  }
+  
+  .occasion-item {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    
+  }
+  
+  .occasion-name {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

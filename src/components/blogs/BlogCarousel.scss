@@ -1,0 +1,74 @@
+$gradient-end: rgba(0, 0, 0, 0.3);
+$gradient-start: rgba(0, 0, 0, 0.1);
+
+.blog-carousel {
+  background: #b7b7b7;
+  color: #fff;
+  padding: 2rem 1rem;
+
+  .loading-spinner {
+    text-align: center;
+    color: #F8D32A;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .carousel {
+    .carousel-inner {
+      display: flex;
+      flex-wrap: nowrap;
+
+      .carousel-item {
+        flex: 0 0 100%;
+        box-sizing: border-box;
+
+        .carousel-card {
+          background: #333;
+          border: none;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 150px;
+          margin-bottom: 10px;
+
+          .carousel-title {
+            color: #F8D32A;
+            text-decoration: none;
+            font-size: 1.25rem;
+            text-align: center;
+            transition: color 0.3s ease;
+            padding: 0 10px;
+
+            &:hover {
+              color: #F8D32A;
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      filter: invert(1);
+    }
+
+    .carousel-indicators {
+      bottom: -30px;
+    }
+  }
+
+
+}
+
+.blog-section {
+  @media (min-width: 992px) {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    .carousel-item {
+      flex: 0 0 100%;
+    }
+  }
+}

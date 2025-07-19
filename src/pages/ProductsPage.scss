@@ -1,0 +1,188 @@
+@import "../assets/styles/variables";
+@import "../assets/styles/mixins";
+
+.products-page {
+  background-color: $background-color;
+  min-height: 100vh;
+  margin-bottom: 1rem;
+
+  .useless-class {
+    padding: 2px;
+  }
+
+  .filter-button {
+    @include button-primary;
+  }
+
+  .product-card {
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+
+    & .image {
+      @include mobile {
+        height: 260px;
+      }
+
+      @include desktop {
+        height: 400px;
+      }
+
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(90%);
+      transition: transform 0.3s ease-in-out,
+      filter 0.3s ease-in-out;
+      transform-origin: center bottom;
+    }
+
+    &:hover .image {
+      transform: scale(1.05);
+      filter: brightness(100%);
+    }
+  }
+
+  .card-title {
+    @include mobile {
+      font-size: 12px;
+      @include clamped-text-one;
+    }
+
+    @include clamped-text-one;
+  }
+
+  .product-gender {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 3px;
+    border-radius: 0px;
+    font-size: 10px;
+    color: #8b8b8b;
+  }
+
+  .mrp {
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .discount {
+    font-size: 0.6rem;
+    color: #008531;
+  }
+
+  .actual-price {
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+    text-decoration: line-through;
+    color: #00ad54;
+  }
+
+  .loading-container {
+    text-align: center;
+    font-size: 1.5rem;
+    color: $secondary-color;
+    padding: 50px 0;
+  }
+
+  .sort-and-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .empty-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+
+
+    .no-products-image {
+      height: 200px;
+    }
+
+  }
+
+  .modal-body {
+    background-color: rgb(238, 238, 238);
+    padding-left: 5rem;
+  }
+
+  .form-check {
+    padding-left: 0;
+
+    .form-check-input {
+      margin-top: 0.3rem;
+      margin-left: -1.25rem;
+    }
+
+    .form-check-label {
+      margin-left: 1.25rem;
+      color: $dark-gray;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.custom-option {
+  border: 2px solid #bababa;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  color: #bababa;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.selected {
+    background-color: #f1f985;
+    color: #000;
+  }
+}
+
+.rc-slider-track {
+  background-color: #f8a92a;
+  height: 5px;
+}
+
+.rc-slider-rail {
+  background-color: lightblue;
+  height: 5px;
+}
+
+.rc-slider-handle {
+  background-color: black;
+  border: none;
+}
+
+.custom-modal .modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1.75rem);
+}
+
+.custom-modal .modal-content {
+  width: 100%;
+}
+
+.modal-close-button {
+  @include button-secondary;
+}
+
+.modal-apply-button {
+  @include button-primary;
+}
+
+.modal-remove-button {
+  @include button-primary-grey;
+}

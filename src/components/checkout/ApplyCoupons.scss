@@ -1,0 +1,71 @@
+@import "../../assets/styles/mixins";
+
+.apply-coupons {
+    margin-top: 1rem;
+
+    .remove-button {
+        @include button-secondary;
+    }
+
+    .apply-button {
+        @include button-primary;
+    }
+
+    .coupon-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .coupon-title {
+        font-weight: bold;
+    }
+
+    .coupon-discount {
+        color: gray;
+    }
+
+    .checkout-details {
+        margin-top: 20px;
+        font-size: 16px;
+
+        .checkout-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .summary {
+            margin-top: 20px;
+            font-size: 14px;
+
+            div {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .error-message {
+        color: red;
+        margin-top: 10px;
+    }
+
+    .button-grey {
+        @include button-secondary;
+    }
+
+    .wrap-switch {
+        cursor: pointer;
+    }
+
+    .loading-spinner {
+        @include loading-animation;
+    }
+
+    .checkout-button {
+        @include button-primary;
+        padding: 10px;
+        font-weight: 600;
+    }
+}

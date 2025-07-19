@@ -1,0 +1,17 @@
+.order-confirmed-container {
+    padding: 20px;
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        .order-confirmed-container {
+            padding: 10px;
+        }
+
+        .table {
+            font-size: 0.8rem;
+        }
+    }
+}

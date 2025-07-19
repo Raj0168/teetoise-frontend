@@ -1,0 +1,99 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/mixins";
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &.slick-prev {
+            left: 30px;
+        }
+
+        &.slick-next {
+            right: 30px;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .slick-dots {
+        bottom: -30px;
+
+        li {
+            margin: 0 5px;
+
+            button {
+                &:before {
+                    color: #000;
+                    opacity: 1;
+                }
+            }
+        }
+
+        li.slick-active button:before {
+            color: #000;
+        }
+    }
+
+    .product-slide {
+        height: 400px;
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+
+        img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+            // filter: grayscale(0);
+            transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+            filter:brightness(90%);
+        }
+
+        .slider-caption {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            @include desktop {
+                height: 90;
+            }
+        }
+        
+        &:hover img {
+            transform: scale(1.05);
+            filter:brightness(100%);
+        }
+
+        &:hover .slider-caption {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: $primary-color;
+        }
+    }
+}

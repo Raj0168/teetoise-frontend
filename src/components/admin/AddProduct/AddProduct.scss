@@ -1,0 +1,47 @@
+.add-product-container {
+  .add-product-form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      margin-right: 10px;
+    }
+
+    .alert {
+      margin-bottom: 20px;
+    }
+  }
+
+  .image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    .image-thumbnail {
+      margin: 5px;
+      position: relative;
+
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+    }
+  }
+
+  .spinner-border {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/mixins";
+
+.header {
+    .heading {
+        color: #fff;
+        margin-right: 120px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: $secondary-color;
+    border-bottom: 2px solid #fff;
+
+    &__icon {
+        @include svgStyles;
+        color: #fff;
+    }
+
+    &__logo {
+        background-image: url("../../assets/images/teetoise_logo.svg");
+        height: 50px;
+        width: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

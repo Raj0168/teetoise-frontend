@@ -1,0 +1,125 @@
+@import '../../assets/styles/mixins';
+
+.featured-categories {
+  .category-item {
+    padding: 0 2px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .category-image {
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(90%);
+      height: 200px;
+    }
+
+    &:hover .category-image {
+      filter: brightness(100%);
+    }
+
+    .category-name {
+
+      @include mobile {
+        position: absolute;
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        height: 50px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        text-align: center;
+        justify-content: space-evenly;
+        top: 60%;
+      }
+
+      @include desktop {
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        font-size: 1.25rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        height: 90px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        text-align: center;
+        justify-content: space-evenly;
+      }
+    }
+
+    &:hover .category-name {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: $primary-color;
+    }
+  }
+
+}
+
+.featured_heading {
+
+  @include mobile {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+
+  @include desktop {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+}
+
+.product-slide {
+  height: 400px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .slider-caption {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 1rem;
+
+    @include mobile {
+      & h3 {
+        font-size: 1rem;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  .featured-categories {
+    width: 90%;
+  }
+}

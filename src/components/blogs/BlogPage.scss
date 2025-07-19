@@ -1,0 +1,65 @@
+$gradient-start: rgba(0, 0, 0, 0.1);
+$gradient-end: rgba(0, 0, 0, 0.3);
+$hover-color: #F8D32A;
+
+.blog-page {
+    background: linear-gradient(135deg, $gradient-start, $gradient-end);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        padding: 3rem;
+        max-width: 1200px;
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.6);
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            }
+
+            .card-body {
+                text-align: center;
+
+                .card-title {
+                    font-size: 1.25rem;
+                    margin-bottom: 1rem;
+                    color: #fff;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: $hover-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .loading-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
+            border-width: 0.5rem;
+            border-color: #fff transparent transparent transparent;
+        }
+    }
+}

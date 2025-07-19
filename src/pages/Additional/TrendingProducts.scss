@@ -1,0 +1,94 @@
+@import "../../assets/styles/mixins";
+
+.trending-page {
+    .loading-overlay {
+        @include loading-animation;
+    }
+
+    .useless-class {
+        padding: 2px;
+    }
+
+    .product-card {
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+
+        & .image {
+            @include mobile {
+                height: 260px;
+            }
+
+            @include desktop {
+                height: 400px;
+            }
+
+            width: 100%;
+            object-fit: cover;
+            filter: brightness(90%);
+            transition: transform 0.3s ease-in-out,
+            filter 0.3s ease-in-out;
+            transform-origin: center bottom;
+        }
+
+        &:hover .image {
+            transform: scale(1.05);
+            filter: brightness(100%);
+        }
+    }
+
+    .card-title {
+        font-size: 12px;
+        @include clamped-text-one;
+    }
+
+    .product-gender {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        padding: 5px;
+        border-radius: 0px;
+        font-size: 12px;
+        color: #8b8b8b;
+    }
+
+    .mrp {
+        font-size: 1rem;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .discount {
+        font-size: 0.6rem;
+        color: #00ad54;
+    }
+
+    .actual-price {
+        font-size: 0.7rem;
+        margin-left: 0.5rem;
+        text-decoration: line-through;
+        color: #8b8b8b;
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .loading {
+        @include loading-animation;
+    }
+}
