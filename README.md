@@ -1,4 +1,4 @@
-# Teetoise↗ Frontend
+# Teetoise Frontend
 
 > **Responsive, SEO‑optimized React application for a scalable e‑commerce platform.**
 
@@ -108,11 +108,11 @@ User login screen with email/password. <br /><img src="public/screenshots/0.Logi
 
 ### Register Page
 
-User registration screen with input validation. <br /><img src="public/screenshots/1.Register.webp" alt="Register Page" width="150" />
+User registration screen with input validation. <br /><img src="public/screenshots/0.Register.webp" alt="Register Page" width="150" />
 
 ### Home Page – Banner and Promotions
 
-Landing page with promotional banners and featured collections. <br /><img src="public/screenshots/2.Home_1.webp" alt="Home Banner" width="150" />
+Landing page with promotional banners and featured collections. <br /><img src="public/screenshots/1.Home_1.webp" alt="Home Banner" width="150" />
 
 ### Home Page – Featured Products
 
